@@ -1,9 +1,13 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello, this is the homepage!</h1>
-    </div>
+    <>
+      <Routes>
+        <Route path="/react-github-page/" element={<Home />} />
+      </Routes>
+    </>
   );
 }
